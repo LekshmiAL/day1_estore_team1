@@ -1,0 +1,14 @@
+package in.stack.eStore.main;
+
+import in.stack.eStore.view.ProductView;
+
+public class EstoreApp {
+	
+	public static void main(String[] args) {
+		//product flow
+		ProductView productView = new ProductView();
+		productView.homeMenu();
+
+	}
+
+}
