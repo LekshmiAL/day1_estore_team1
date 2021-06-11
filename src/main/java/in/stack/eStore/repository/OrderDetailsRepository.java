@@ -22,7 +22,6 @@ public class OrderDetailsRepository implements OrderDetailsRepoInterface {
 		int discount = 0;
 		OrederDetails orderDetails = order.getOrderDetails();
 		List<Product> productsList = orderDetails.getProducts();
-
 		String query = " insert into order_details (order_id, product_id, discount)" + " values (?, ?, ?)";
 		PreparedStatement preparedStmt = con.prepareStatement(query);
 		int order_id = getOrderId();
