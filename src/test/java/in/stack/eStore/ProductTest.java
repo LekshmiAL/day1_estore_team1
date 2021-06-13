@@ -64,4 +64,14 @@ List<Product> productList = null;
 		productList.add(returnProduct);
 		assertEquals(addProduct.getProductName(), returnProduct.getProductName(), addProduct.getProductName()+" not inserted ");
 	}
+	
+	@Test
+	public void updateProductTest() throws SQLException {
+		//update pen
+		Product updProduct = new Product(1, "pen", 20, 15, true);
+		Mockito.when(productRepo.updateProduct(updProduct)).thenReturn(updProduct);
+		Product returnProduct = productService.updateProduct(updProduct);
+		assertNotNull(returnProduct);
+		
+	}
 }
