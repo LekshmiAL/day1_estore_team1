@@ -58,7 +58,7 @@ public class OrderTest {
 		{
 			this.product=new Product(1, "pen", 15, 10, true);
 			//this.order=createOrderObject();
-			//this.productList=createProducts();
+			//this.productList=createProducts();.
 			
 		}
 		
